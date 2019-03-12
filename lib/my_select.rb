@@ -4,6 +4,7 @@ def my_select(collection)
  new = []
  while i < collection.length
    yield collection[i]
+   new.push(collection(i))
    i = i + 1
  end
  new
